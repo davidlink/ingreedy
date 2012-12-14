@@ -64,6 +64,24 @@ class IngreedyParser
     set_unit_variations :liter, ["l", "l.", "liter", "liters"]
     set_unit_variations :milligram, ["mg", "mg.", "milligram", "milligrams"]
     set_unit_variations :milliliter, ["ml", "ml.", "milliliter", "milliliters"]
+    # informal units
+    set_unit_variations :bag, ["bag", "bags"]
+    set_unit_variations :box, ["box", "boxes"]
+    set_unit_variations :bunch, ["bunch", "bunches"]
+    set_unit_variations :can, ["can", "cans"]
+    set_unit_variations :carton, ["carton", "cartons"]
+    set_unit_variations :container, ["container", "containers"]
+    set_unit_variations :dash, ["dash", "dashes"]
+    set_unit_variations :dollop, ["dollop", "dollops"]
+    set_unit_variations :jug, ["jug", "jugs"]
+    set_unit_variations :pack, ["pack", "packs"]
+    set_unit_variations :package, ["package", "packages"]
+    set_unit_variations :packet, ["packet", "packets"]
+    set_unit_variations :pinch, ["pinch", "pinches"]
+    set_unit_variations :scoop, ["scoop", "scoops"]
+    set_unit_variations :shake, ["shake", "shakes"]
+    set_unit_variations :sprinkle, ["sprinkle", "sprinkles"]
+    set_unit_variations :strip, ["strip", "strips"]
   end
   def parse_unit
     create_unit_map if @unit_map.nil?
