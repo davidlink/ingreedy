@@ -1,6 +1,6 @@
 class IngreedyParser
 
-  attr_reader :amount, :unit, :ingredient, :query
+  attr_reader :amount, :unit, :ingredient, :query, :container_amount, :container_unit
 
   def initialize(query)
     @query = query
@@ -39,7 +39,7 @@ class IngreedyParser
       fraction = numerator / denominator
     end
     @amount = amount_string.to_f + fraction
-    @amount *= @container_amount.to_f if @container_amount
+#   @amount *= @container_amount.to_f if @container_amount
   end
   def set_unit_variations(unit, variations)
     variations.each do |abbrev|
